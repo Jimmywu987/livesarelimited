@@ -35,11 +35,13 @@ const EducationPage = () => {
       <MaxWidthWrapper className="space-y-8">
         <SectionTitle title="服務範圍" />
         <div className="flex flex-col md:flex-row flex-1 md:justify-evenly">
-          <div className="py-10 px-20 space-y-10 flex-1">
-            <div className="space-y-2">
-              <h2 className="text-5xl font-bold ">分享</h2>
-              <h2 className="text-5xl font-bold ">我們從每個遺宅學到的</h2>
-              <h2 className="text-5xl font-bold ">生命故事</h2>
+          <div className="py-10 px-10 md:px-20 space-y-4 md:space-y-10 flex-1">
+            <div className="md:space-y-2">
+              <h2 className="text-2xl md:text-5xl font-bold ">分享</h2>
+              <h2 className="text-2xl md:text-5xl font-bold ">
+                我們從每個遺宅學到的
+              </h2>
+              <h2 className="text-2xl md:text-5xl font-bold ">生命故事</h2>
             </div>
             <EnquiryButton
               size="main"
@@ -59,7 +61,7 @@ const EducationPage = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <MaxWidthWrapper className="space-y-16 px-10">
+      <MaxWidthWrapper className="space-y-16 px-3 md:px-10">
         <div className="flex flex-col md:flex-row md:justify-between md:space-x-10 space-y-10 md:space-y-0">
           {EDUCATIONS_LIST.map((education) => (
             <ServiceCard {...education} key={education.title} />

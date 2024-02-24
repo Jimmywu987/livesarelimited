@@ -9,8 +9,8 @@ type DetailsProps = {
 export const Details = ({ title, description, className }: DetailsProps) => {
   return (
     <div className={cn("space-y-6 flex-1 font-bold", className)}>
-      <h6 className="text-2xl md:text-md">{title}</h6>
-      <p className="text-xl">{description}</p>
+      <h6 className="text-xl md:text-2xl md:text-md">{title}</h6>
+      <p className="text-lg md:text-xl">{description}</p>
     </div>
   );
 };

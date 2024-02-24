@@ -9,7 +9,7 @@ export const ServiceCard = (props: (typeof SERVICES_LIST)[number]) => {
   const { title, description, link } = props;
   return (
     <CardWithBackgroundImage {...props}>
-      <h5 className="text-white text-4xl font-black">{title}</h5>
+      <h5 className="text-white text-3xl md:text-4xl font-black">{title}</h5>
       <p className="py-10 text-white max-w-[330px]">{description}</p>
       <Link className={cn(buttonVariants({ variant: "outline" }))} href={link}>
         了解更多

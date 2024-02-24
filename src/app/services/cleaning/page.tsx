@@ -20,10 +20,10 @@ const CleaningPage = () => {
       <MaxWidthWrapper className="space-y-8">
         <SectionTitle title="服務範圍" />
         <div className="flex flex-col md:flex-row flex-1 md:justify-evenly">
-          <div className="py-10 px-20 space-y-10 flex-1">
+          <div className="py-10 px-10 md:px-20 space-y-10 flex-1">
             <div className="space-y-2 md:space-y-4">
-              <h2 className="text-7xl font-bold ">遺宅清潔</h2>
-              <h2 className="text-7xl font-bold ">遺物整理</h2>
+              <h2 className="text-5xl md:text-7xl font-bold ">遺宅清潔</h2>
+              <h2 className="text-5xl md:text-7xl font-bold ">遺物整理</h2>
             </div>
             <EnquiryButton
               size="main"
@@ -47,7 +47,7 @@ const CleaningPage = () => {
         <MaxWidthWrapper className="space-y-16 p-10">
           <h3 className=" font-bold text-4xl">有關遺宅清潔及遺物整理</h3>
           <div className="space-y-4 md:space-y-12">
-            <div className="flex flex-wrap gap-4 justify-start  md:justify-around">
+            <div className="flex flex-wrap gap-4 justify-start  md:justify-around space-y-3 md:space-y-0">
               <CleaningService
                 icon={<Accompany size="28" />}
                 title="陪伴家屬"
@@ -64,14 +64,18 @@ const CleaningPage = () => {
                 description="以特殊清潔劑把滲入墻壁或地面的有機物污染清走，避免細菌再次於現場滋生。"
               />
             </div>
-            <div className="flex flex-wrap justify-start md:justify-around">
+            <div className="flex flex-wrap justify-start md:justify-around space-y-3 md:space-y-0">
               <CleaningService
                 icon={<Inherit size="28" />}
                 title="找出遺物"
                 description="協助家屬從惡劣環境中找出家人和自己最後也是最珍貴的回憶，好好保存下來。"
               />
               <CleaningService
-                icon={<Deodour size="28" />}
+                icon={
+                  <div className="w-[40px] h-[40px]">
+                    <Deodour size="100%" />
+                  </div>
+                }
                 title="清除異味"
                 description="現場遺留下的異味往往需要一段時間才能徹底散去，人生事專業團隊會透過特殊氣味清潔劑協助處理。"
               />

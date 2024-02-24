@@ -13,7 +13,7 @@ export const CleaningServiceWithImage = ({
 }: CleaningServiceWithImageProps) => {
   return (
     <div className="flex flex-col-reverse md:flex-row md:justify-evenly md:items-center ">
-      <div className=" px-20 md:px-0 space-y-6 w-full md:w-5/12 mt-10 md:mt-0">
+      <div className=" px-0 md:px-0 space-y-6 w-full md:w-5/12 mt-10 md:mt-0">
         <h5 className="font-bold text-3xl md:text-6xl">{title}</h5>
         <div className="space-y-1">
           {descriptions.map((description) => {
