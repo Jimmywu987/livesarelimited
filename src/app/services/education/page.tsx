@@ -15,7 +15,7 @@ import {
 import { Partners } from "@/components/Partners";
 
 import { ServiceCard } from "@/components/mainPage/card/ServiceCard";
-export const EDUCATIONS_LIST = [
+const EDUCATIONS_LIST = [
   {
     title: "到校講座",
     description:
