@@ -1,18 +1,8 @@
-import { Details } from "@/components/aboutUs/Details";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
+import { Partners } from "@/components/Partners";
 import { SectionTitle } from "@/components/mainPage/SectionTitle";
 import { EnquiryButton } from "@/components/ui/buttons/EnquiryButton";
 import Image from "next/image";
-import { CleaningService } from "@/components/services/cleaning/CleaningService";
-import {
-  Accompany,
-  CleaningScene,
-  Deodour,
-  HandleRange,
-  Inherit,
-  WasteDisposing,
-} from "@/components/svg";
-import { Partners } from "@/components/Partners";
 
 import { ServiceCard } from "@/components/mainPage/card/ServiceCard";
 const EDUCATIONS_LIST = [

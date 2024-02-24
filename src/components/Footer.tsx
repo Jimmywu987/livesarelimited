@@ -15,7 +15,7 @@ const FOOTER_ITEM_LIST = [
       },
       {
         text: "服務範圍",
-        link: "/",
+        link: "/services/cleaning",
       },
       {
         text: "媒體採訪",

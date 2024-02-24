@@ -10,7 +10,7 @@ export const LINKS = [
     itemText: "關於我們",
   },
   {
-    url: "/",
+    url: "/services/cleaning",
     itemText: "服務範圍",
   },
   {
