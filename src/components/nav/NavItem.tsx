@@ -1,10 +1,5 @@
-import Link from "next/link";
-import { LINKS } from "@/components/nav/Navbar";
+import Link, { LinkProps } from "next/link";
 
-export const NavItem = ({ url, itemText }: (typeof LINKS)[number]) => {
-  return (
-    <Link href={url} className="text-lg text-text-second font-bold">
-      {itemText}
-    </Link>
-  );
+export const NavItem = (props: LinkProps) => {
+  return <Link {...props} className="text-lg text-text-second font-bold" />;
 };
