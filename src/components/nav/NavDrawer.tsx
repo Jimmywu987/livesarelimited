@@ -37,7 +37,7 @@ export const NavDrawer = () => {
           <DrawerBody className="flex flex-col justify-between">
             <div className="flex flex-col space-y-4 mt-6">
               {LINKS.map((link) => (
-                <NavDrawerItem {...link} key={link.itemText} />
+                <NavDrawerItem {...link} key={link.children} />
               ))}
             </div>
             <Button
