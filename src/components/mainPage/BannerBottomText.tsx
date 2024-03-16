@@ -4,7 +4,7 @@ type BannerBottomTextProps = {
 
 export const BannerBottomText = ({ text }: BannerBottomTextProps) => {
   return (
-    <h3 className="font-bold text-white text-sm md:text-3xl text-center">
+    <h3 className="font-bold text-white text-[10px] md:text-3xl text-center whitespace-nowrap">
       {text}
     </h3>
   );

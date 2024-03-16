@@ -20,7 +20,10 @@ export const AboutUs = () => {
               title="遺物處理"
               paragraph="面對至親好友的離世和惡劣的現場環境，家屬少不免會觸景傷情，我們深信「物品有價，回憶無價」，希望透過遺物整理服務，為家屬找出並整理好那些承載珍貴回憶的物品，透過物品緬懷先人的同時，亦能告別遺憾，打開人生新一頁。"
             />
-            <EnquiryButton size="lg" className="text-xl shadow-lg text-black">
+            <EnquiryButton
+              size="lg"
+              className="text-lg md:text-xl shadow-lg text-black mt-6"
+            >
               查詢服務
             </EnquiryButton>
           </div>

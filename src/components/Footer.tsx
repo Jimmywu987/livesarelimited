@@ -5,53 +5,56 @@ import Link from "next/link";
 const FOOTER_ITEM_LIST = [
   {
     mainItem: {
-      text: "首頁",
-      link: "/",
+      children: "首頁",
+      href: "/",
     },
     subItems: [
       {
-        text: "關於我們",
-        link: "/about-us",
+        children: "關於我們",
+        href: "/about-us",
       },
       {
-        text: "服務範圍",
-        link: "/services/cleaning",
+        children: "服務範圍",
+        href: "/services/cleaning",
       },
+      // {
+      //   children: "媒體採訪",
+      //   href: "/",
+      // },
       {
-        text: "媒體採訪",
-        link: "/",
-      },
-      {
-        text: "聯絡我們",
-        link: "/",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSfWCVI-rnwQ0GjFOQEb_NUhlqgdAQW9t3GktMWaE1_7QMRvcw/viewform?pli=1",
+        children: "聯絡我們",
+        target: "_blank",
       },
     ],
   },
+  // {
+  //   mainItem: {
+  //     children: "人生事動態",
+  //     href: "/",
+  //   },
+  //   subItems: [
+  //     {
+  //       children: "未來活動",
+  //       href: "/",
+  //     },
+  //     {
+  //       children: "博客文章",
+  //       href: "/",
+  //     },
+  //   ],
+  // },
   {
     mainItem: {
-      text: "人生事動態",
-      link: "/",
+      children: "社交媒體",
+      href: "/",
     },
     subItems: [
       {
-        text: "未來活動",
-        link: "/",
-      },
-      {
-        text: "博客文章",
-        link: "/",
-      },
-    ],
-  },
-  {
-    mainItem: {
-      text: "社交媒體",
-      link: "/",
-    },
-    subItems: [
-      {
-        text: "Instagram",
-        link: "/",
+        children: "Instagram",
+
+        href: "https://www.instagram.com/livesare/?r=nametag",
+        target: "_blank",
       },
     ],
   },
@@ -76,13 +79,9 @@ export const Footer = () => {
             const { mainItem, subItems } = each;
             return (
               <div key={index} className="flex flex-col space-y-4">
-                <Link href={mainItem.link} className="text-white font-bold">
-                  {mainItem.text}
-                </Link>
+                <Link {...mainItem} className="text-white font-bold" />
                 {subItems.map((item, indx) => (
-                  <Link href={item.link} key={indx} className="text-white/60">
-                    {item.text}
-                  </Link>
+                  <Link {...item} key={indx} className="text-white/60" />
                 ))}
               </div>
             );

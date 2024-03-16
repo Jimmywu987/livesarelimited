@@ -11,13 +11,13 @@ const PlanningPage = () => {
       <MaxWidthWrapper className="space-y-8">
         <SectionTitle title="服務範圍" />
         <div className="flex flex-col md:flex-row flex-1 md:justify-evenly">
-          <div className="py-10 px-10 md:px-20 space-y-10 flex-1">
+          <div className="py-10 px-6 md:px-20 space-y-10 flex-1">
             <div className="space-y-2 md:space-y-4">
               <h2 className="text-5xl md:text-7xl font-bold ">禮儀規劃</h2>
             </div>
             <EnquiryButton
               size="main"
-              className="text-2xl md:text-4xl shadow-lg font-bold"
+              className="text-2xl md:text-4xl shadow-lg font-bold mt-6"
             >
               查詢服務
             </EnquiryButton>
